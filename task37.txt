@@ -1,0 +1,270 @@
+let db name=Zenclass;
+let collection name=users;
+students={
+    {
+        "name":"person1",
+        "placement":"yes"
+
+    }, {
+        "name":"person12",
+        "placement":"yes"
+
+    }, {
+        "name":"person3",
+        "placement":"yes"
+
+    }, {
+        "name":"person4",
+        "placement":"No"
+
+    }, {
+        "name":"person5",
+        "placement":"yes"
+
+    }
+}
+//syntax for creating collection//
+{
+    Zenclass.users.insertMany(students)
+}
+let codekata problems={
+    {
+        "problemid":1,
+        "completedby":{"person1","person3","person5"}
+    }, {
+        "problemid":2,
+        "completedby":{"person2","person4","person5"}
+    }, {
+        "problemid":3,
+        "completedby":{"person1","person4","person3"}
+    }, {
+        "problemid":4,
+        "completedby":{"person2","person3","person4"}
+    }, {
+        "problemid":5,
+        "completedby":{"person3","person4","person5"}
+    }
+}
+
+//syntax for creating codekata//
+{
+    Zenclass.codekata.insertMany(codekata problems);
+}
+
+
+let attendancedata={
+    {"date":"15-10-2021",
+    "userspresent":{"person1","person2","person3","person4","person5"}
+    }, {"date":"16-10-2021",
+    "userspresent":{"person1","person2","person3","person4","person5"}
+    }, {"date":"17-10-2021",
+    "userspresent":{"person1","person2","person3","person4","person5"}
+    }, {"date":"18-10-2021",
+    "userspresent":{"person1","person2","person3","person4","person5"}
+    }, {"date":"19-10-2021",
+    "userspresent":{"person1","person2","person4","person5"}
+    }, {"date":"20-10-2021",
+    "userspresent":{"person1","person2","person3","person4","person5"}
+    }, {"date":"21-10-2021",
+    "userspresent":{"person1","person2","person3","person4","person5"}
+    }, {"date":"22-10-2021",
+    "userspresent":{"person1","person2","person3",,"person5"}
+    }, {"date":"23-10-2021",
+    "userspresent":{"person1","person2","person3","person4","person5"}
+    }, {"date":"24-10-2021",
+    "userspresent":{"person1","person2","person3","person4","person5"}
+    }, {"date":"25-10-2021",
+    "userspresent":{"person1","person2","person3","person4","person5"}
+    }, {"date":"26-10-2021",
+    "userspresent":{"person1",,"person3","person4","person5"}
+    }, {"date":"27-10-2021",
+    "userspresent":{"person1","person2","person3","person4","person5"}
+    }, {"date":"28-10-2021",
+    "userspresent":{"person1","person2","person3","person4","person5"}
+    }, {"date":"29-10-2021",
+    "userspresent":{"person2","person3","person4","person5"}
+    }, {"date":"30-10-2021",
+    "userspresent":{"person1","person2","person3","person4","person5"}
+    }, {"date":"31-10-2021",
+    "userspresent":{"person1","person2","person4","person5"}
+    }
+}
+
+//syntax for creating attendance//
+{
+    Zenclass.attendance.insertMany(attendancedata);
+}
+
+
+let topicscovered={
+    {
+        "date":"15-10-2021",
+        "topic":"javascript"
+    },{
+        "date":"16-10-2021",
+        "topic":"Advanced js"
+    },{
+        "date":"17-10-2021",
+        "topic":" Api calling"
+    },{
+        "date":"18-10-2021",
+        "topic":"Crud operations"
+    },{
+        "date":"19-10-2021",
+        "topic":" Rest Api"
+    },{
+        "date":"20-10-2021",
+        "topic":"Html"
+    },{
+        "date":"21-10-2021",
+        "topic":"Webkata"
+    },{
+        "date":"22-10-2021",
+        "topic":"Css"
+    },{
+        "date":"23-10-2021",
+        "topic":"Properties"
+    },{
+        "date":"24-10-2021",
+        "topic":"React"
+    },{
+        "date":"25-10-2021",
+        "topic":"Bootstrap"
+    },{
+        "date":"26-10-2021",
+        "topic":"ES5"
+    },{
+        "date":"27-10-2021",
+        "topic":"ES6"
+    },{
+        "date":"28-10-2021",
+        "topic":"Fontawesome"
+    },{
+        "date":"29-10-2021",
+        "topic":"NodeJs"
+    },{
+        "date":"30-10-2021",
+        "topic":"mySql"
+    },{
+        "date":"31-10-2021",
+        "topic":"NoSql"
+    }
+}
+
+
+//syntax for creating topics//
+{
+    Zenclass.topics.insertMany(topicscovered);
+}
+
+let tasksgiven={
+    {
+        "date":"15-10-2021",
+        "task":"javascript"
+    },{
+        "date":"16-10-2021",
+        "task":"Advanced js"
+    },{
+        "date":"17-10-2021",
+        "task":" Api calling"
+    },{
+        "date":"18-10-2021",
+        "task":"Crud operations"
+    },{
+        "date":"19-10-2021",
+        "task":" Rest Api"
+    },{
+        "date":"20-10-2021",
+        "task":"Html"
+    },{
+        "date":"21-10-2021",
+        "task":"Webkata"
+    },{
+        "date":"22-10-2021",
+        "task":"Css"
+    },{
+        "date":"23-10-2021",
+        "task":"Properties"
+    },{
+        "date":"24-10-2021",
+        "task":"React"
+    },{
+        "date":"25-10-2021",
+        "task":"Bootstrap"
+    },{
+        "date":"26-10-2021",
+        "task":"ES5"
+    },{
+        "date":"27-10-2021",
+        "task":"ES6"
+    },{
+        "date":"28-10-2021",
+        "task":"Fontawesome"
+    },{
+        "date":"29-10-2021",
+        "task":"NodeJs"
+    },{
+        "date":"30-10-2021",
+        "task":"mySql"
+    },{
+        "date":"31-10-2021",
+        "task":"NoSql"
+    }
+}
+
+//syntax for creating tasks//
+{
+    Zenclass.tasks.insertMany(tasksgiven);
+}
+
+
+let drives={
+    {
+        "date":"16-10-21",
+        "companyname":"abc pvt ltd",
+        "studentsattended":{"person1","person5","person3"}
+    },{
+        "date":"21-10-21",
+        "companyname":"def pvt ltd",
+        "studentsattended":{"person1","person2","person3"}
+    },{
+        "date":"23-10-21",
+        "companyname":"ghi pvt ltd",
+        "studentsattended":{"person1","person4","person3"}
+    },{
+        "date":"28-10-21",
+        "companyname":"jkl pvt ltd",
+        "studentsattended":{"person1","person4","person2"}
+    },{
+        "date":"31-10-21",
+        "companyname":"mno pvt ltd",
+        "studentsattended":{"person5","person4","person3"}
+    }
+}
+
+//syntax for creating company_drives//
+{
+    Zenclass.company_drives.insertMany(drives);
+}
+
+
+let mentorsdata={
+    {
+        "name":"mentor1",
+        "mentees_count":18    
+    },{
+        "name":"mentor1",
+        "mentees_count":15    
+    },{
+        "name":"mentor1",
+        "mentees_count":12    
+    },{
+        "name":"mentor1",
+        "mentees_count":21    
+    }
+}
+
+//syntax for creating mentors//
+{
+    Zenclass.mentorsdata.insertMany(mentors);
+}
